@@ -1,0 +1,33 @@
+/* .wave {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: linear-gradient(to bottom, #3784F4, #60a5fa);
+    border-radius: 40%;
+    animation: wave 8s linear infinite;
+    transform-origin: 50% 48%;
+    opacity: 0.6;
+  }
+  
+  .wave-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+  
+  @keyframes wave {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+   */

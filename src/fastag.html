@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div className="min-h-screen bg-white flex flex-col">
+  <header className = "p-4 border-b">
+    <div className = "flex items-center gap-2">
+      <img className = {`w-[200px] object-contain`} src={'https://surepass.io/wp-content/uploads/2019/09/2-layers@2x.png'}/>
+    </div>
+  </header>
+
+  <main className="flex-grow flex flex-col justify-between p-4">
+    <div className="space-y-6">
+      <div className="space-y-2">
+        <label htmlFor="mobile" className="text-xl font-medium">Mobile Number</label>
+        <Input
+                id="mobile"
+                placeholder="Enter your mobile number"
+                className="h-12 text-lg"
+        />
+      </div>
+
+      <div className="space-y-2">
+        <label htmlFor="rc" className="text-xl font-medium">RC Number</label>
+        <Input
+                id="rc"
+                placeholder="Enter your rc number"
+                className="h-12 text-lg"
+        />
+      </div>
+
+      <div className="space-y-2">
+        {/* <label className="text-xl font-medium">FasTag Option</label> */}
+        <RadioGroup
+                defaultValue="recharge"
+        // onValueChange={setFastagOption}
+        className="flex flex-col space-y-3 mt-4"
+        >
+        <div className="flex items-center space-x-2">
+          <RadioGroupItem value="recharge" id="recharge"/>
+          <Label htmlFor="recharge" className="text-lg">FasTag Recharge</Label>
+        </div>
+        <div className="flex items-center space-x-2">
+          <RadioGroupItem value="purchase" id="purchase"/>
+          <Label htmlFor="purchase" className="text-lg">FasTag Purchase</Label>
+        </div>
+        </RadioGroup>
+      </div>
+    </div>
+
+    <div className="space-y-6 mt-6">
+      <div className="flex justify-between items-center pt-4">
+        <span className="text-2xl font-bold">Grand Total</span>
+        <span className="text-2xl">₹250</span>
+      </div>
+
+      <Button
+              className="w-full h-14 text-xl bg-[#C8102E] hover:bg-[#A00D24] text-white"
+      >
+        Continue
+      </Button>
+    </div>
+  </main>
+</div>
+</body>
+</html>
